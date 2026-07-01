@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Negar Hashemi — Software Engineering Researcher</title>
-<meta name="description" content="Negar Hashemi, PhD researcher in software reliability and test flakiness.">
+<meta name="description" content="Negar Hashemi, Postdoctoral Fellow at the University of Auckland working on AI for software engineering, software maintenance, testing, and software quality.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -153,40 +153,6 @@
     border-color:var(--coral);
     color:var(--coral);
     transform:translateY(-1px);
-  }
-
-  /* ---- flaky badge (signature element) ---- */
-  .flaky-badge{
-    margin-top:34px;
-    display:inline-flex;
-    align-items:center;
-    gap:14px;
-    background:var(--teal-deep);
-    color:#EAF3F0;
-    border-radius:10px;
-    padding:14px 18px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:0.88rem;
-    box-shadow:0 10px 24px -12px rgba(21,63,59,0.55);
-  }
-  .flaky-badge .prompt{ color:#9FD8CE; }
-  .flaky-badge .result{
-    font-weight:700;
-  }
-  .flaky-badge .result::before{
-    content: "✓ 47 passed";
-    color:#7BE0A0;
-  }
-  .flaky-badge.is-fail .result::before{
-    content: "✗ 1 failed — non-deterministic";
-    color:#F2A38A;
-  }
-  .flaky-caption{
-    display:block;
-    margin-top:9px;
-    font-family:'JetBrains Mono', monospace;
-    font-size:0.72rem;
-    color:#5C6B60;
   }
 
   /* ---------- sections ---------- */
@@ -375,8 +341,7 @@
   <div class="wrap">
     <h1 class="name">Negar Hashemi</h1>
     <p class="role">Postdoctoral fellow at University of Auckland</p>
-    <p class="lede">I study why tests fail when nothing's actually wrong. My work focuses on detecting and mitigating flaky tests in JavaScript, combining program analysis, empirical methods, and CI-based experimentation to make real-world software more trustworthy.</p>
-
+    <p class="lede">My research focuses on Artificial Intelligence for Software Engineering, software maintenance, testing, and software quality. I am particularly interested in building trustworthy AI-supported tools that help developers improve the reliability, maintainability, and performance of real-world software systems.</p>
     <div class="hero-links">
       <a href="mailto:negar.hashemi@auckland.ac.nz">✉ email</a>
       <a href="https://www.linkedin.com/in/negar-hashemi/" target="_blank" rel="noopener">LinkedIn</a>
@@ -390,7 +355,7 @@
   <div class="wrap">
     <div class="section-head"><span class="idx mono"></span><h2>About</h2></div>
     <div class="about-text">
-      <p>I am a Postdoctoral Fellow at the University of Auckland, working on AI-Driven Non-Functional Software Maintenance with Valerio Terragni and Kelly Blincoe.</P>
+      <p>I am a Postdoctoral Fellow at the University of Auckland, working on AI-Driven Non-Functional Software Maintenance with Valerio Terragni and Kelly Blincoe.</p>
       <p>My research focuses on Artificial Intelligence for Software Engineering, software maintenance, testing, and software quality. In my current work, I explore how AI, particularly Large Language Models and AI agents, can support non-functional maintenance tasks such as improving performance, maintainability, and reliability.</p>
       <p>A key part of my research is understanding how AI-generated code changes can be made not only useful, but also correct, measurable, and trustworthy. I am especially interested in approaches that provide evidence that suggested software changes preserve functionality while improving important quality attributes.</p>
       <p>During my PhD, I studied flaky tests in JavaScript projects, with a focus on identifying and mitigating order-dependent and environment-dependent test failures. This work shaped my broader interest in building reliable software systems and developing practical tools that support developers in real-world settings.</p>
@@ -597,7 +562,7 @@
     <div class="section-head"><span class="idx mono" style="color:var(--gold)"></span><h2>Get in touch</h2></div>
     <p class="lede">Always happy to talk about flaky tests, software reliability, or teaching. Reach out by email or find me on the links below.</p>
     <div class="hero-links">
-      <a href="mailto:negar.hashemi@auckland.ac.nz">✉ hashemi@auckland.ac.nz</a>
+      <a href="mailto:negar.hashemi@auckland.ac.nz">✉ negar.hashemi@auckland.ac.nz</a>
       <a href="https://www.linkedin.com/in/negar-hashemi/" target="_blank" rel="noopener">LinkedIn</a>
       <a href="https://scholar.google.com/citations?user=-XqrcLsAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
       <a href="https://github.com/Negar-Hashemi" target="_blank" rel="noopener">GitHub</a>
@@ -606,17 +571,6 @@
   </div>
 </footer>
 
-<script>
-  // flaky badge: flips between pass/fail state, mirroring a flaky test
-  (function(){
-    var badge = document.getElementById('flakyBadge');
-    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if(prefersReduced){ return; }
-    setInterval(function(){
-      badge.classList.toggle('is-fail');
-    }, 3200);
-  })();
-</script>
 
 </body>
 </html>
