@@ -104,3 +104,50 @@ a:hover { color: #297b6b; text-decoration: underline; text-underline-offset: 3px
   .footer-inner { flex-direction: column; gap: 5px; }
 }
 @media(prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Main text */
+body {
+  font-size: 17px;
+}
+
+/* Navigation */
+.site-header nav a {
+  font-size: 14px;
+}
+
+/* Sidebar */
+.profile-panel p,
+.profile-panel .profile-position,
+.profile-panel-links a {
+  font-size: 14px;
+}
+
+/* Supporting text and links */
+.profile-heading > p,
+.profile-heading > a,
+.page-heading p,
+.home-section > a,
+.profile-links a,
+.section-links,
+.education-detail,
+.entry-meta,
+.scholar-note,
+.publication-authors,
+.publication-venue,
+.service-items li,
+.award-items li,
+.award-year {
+  font-size: 16px;
+}
+
+/* Publication titles */
+.publication-entry h3 {
+  font-size: 17px;
+}
+
+/* Small labels and footer */
+.publication-badge,
+.publication-action,
+.footer-inner {
+  font-size: 14px;
+}
